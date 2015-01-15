@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  </head>
+
+  <body style="opacity: 0">
+  <slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/cgto1.png"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+
+     <aside class="note">
+      <section>
+        <ul>
+          <li>Pressing 'h' highlights code snippets</li>
+          <li>Pressing 'p' toggles speaker notes</li>
+          <li>Pressing 'f' toggles fullscreen viewing</li>
+          <li>Pressing 'w' toggles widescreen</li>
+          <li>Pressing 'o' toggles overview mode</li>
+          <li>Pressing 'ESC' toggles off these goodies</li>
+        </ul>
+      </section>
+    </aside>
+
+    <aside class="gdbar"><img src="images/cgto_128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+    <center>  
+      <h1 data-config-title><!-- populated from slide_config.json --></h1> 
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </center>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Ventajas</li>
+          <li>Dificultades</li>
+          <li>Relación con investigación de Tesis</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>1er Semestre</h2>
+    </hgroup>    
+    <article>
+      <ul class="build fade">
+        <li>Probabilidad y Estadística Avanzada</li>
+        <li>Fundamentos de Ingeniería en Materiales</li>
+        <li>Diseño de Experimentos</li>
+        <li>Simulación Molecular I (Monte Carlo)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Actividades Complementarias</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>Curso Optativo</li>
+        <li>Pláticas de salud</li>
+        <li>Seminarios de la División de Ingenierías</li>
+        <li>Seminarios Moshinsky</li>
+        <li>Curso de Programación en Julia</li>
+        <li>Simposio Materia Condensada Blanda</li>
+        <li>Plática del CIEES</li>
+        <li>Plática de Movilidad</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <p><b>Otras materias de interés</b></p>
+        <ul>
+          <li>Procesos estocásticos</li>
+          <li>Fenómenos de transporte</li>
+          <li>Reología</li>
+          <li>Termodinámica fuera del equilibrio</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>2do Semestre</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Simulación Molecular II (Dinámica Molecular)</li>
+        <li>Mecánica de Medios Continuos</li>
+        <li>Fisicoquímica de Superficies y Sistemas de Autoensamblables</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <p><b>Otras posibles actividades</b></p>
+        <ul>
+          <li>Participación en futuros congresos</li>
+          <li>Presentación de avances de tesis en Seminario</li>
+          <li>Estancia en institución externa</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Actividades Complementarias<h2> 
+    </hgroup>
+    <article>
+      <ul>
+        <li>Seminarios de División de Ingenierías y Moshinsky</li>
+        <li>Impartición de clase de licenciatura (Mecánica Clásica)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Avances en el tema de Tesis</h2>
+      <h3>Asfaltenos</h3>
+    </hgroup>
+    <article>
+      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
+      <pre class="prettyprint" data-lang="fortran">
+&lt;script type='text/fortan'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    <b>for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }</b>
+  }
+&lt;/script&gt;
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Slide with Image (Centered horz/vert)</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/barchart.png" alt="Description" title="Description">
+      <footer class="source">source: place source info here</footer>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/cgto_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Segue Slide</h2>
+      <h3>Subtitle Placeholder</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/cgto_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <center>
+      <q>
+        There is a computer disease that anybody who works with computers knows about. It's a very serious disease and it interferes completely with the work. The trouble with computers is that you 'play' with them!.
+      </q>
+    </center>
+      <div class="author">
+        Richard P. Feynman
+      </div>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/cgto_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;Gracias&gt;</h2>
+      <h3>Contacto</h3>
+      <p class="auto-fadein" data-config-contact>
+    </article>
+
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="logoslide dark nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/cgto1.png"></span>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
