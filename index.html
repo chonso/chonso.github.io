@@ -148,17 +148,21 @@
       <h3>1er semestre</h3>
     </hgroup>
     <article>
-      <p>Simulación Molecular I:</p>
+      <p>Simulación Molecular I</p>
       <pre class="prettyprint" data-lang="fortran">
-&lt;script type='text/fortan'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
+  // Basic NPT emsemble simulation
+  program mc_npt
+  <b>do icycl=1,ncycl
+    ran=ranf()*(npart+1)+1
+    if (ran.le.npart) then
+      call mcmove
+    else
+      call mcvol
+    endif
+    if (mod(icycl,nsamp).eq.0) call sample
+  enddo
+  end program
+    </b>
 </pre>
     </article>
   </slide>
