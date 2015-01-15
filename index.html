@@ -142,7 +142,7 @@
     </article>
   </slide>
 
-  <slide hidden>
+  <slide >
     <hgroup>
       <h2>Avances en el tema de Tesis:Asfaltenos</h2>
       <h3>1er semestre</h3>
@@ -151,16 +151,16 @@
       <p>Simulación Molecular I</p>
       <pre class="prettyprint" data-lang="fortran">
   // Basic NPT emsemble simulation
-  program mc_npt
-  <b>do icycl=1,ncycl
+  <b>program mc_npt
+    do icycl=1,ncycl
     ran=ranf()*(npart+1)+1
     if (ran.le.npart) then
       call mcmove
     else
       call mcvol
-    endif
+    end if
     if (mod(icycl,nsamp).eq.0) call sample
-  enddo
+  end do
   end program
     </b>
 </pre>
