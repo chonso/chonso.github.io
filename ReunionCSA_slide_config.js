@@ -24,10 +24,10 @@ var SLIDE_CONFIG = {
   presenters: [{
     name: 'Francisco Alonso Espinosa Chávez',
     company: 'Maestría en Ciencias Aplicadas',
-    gplus: 'http://plus.google.com/102860806290800670462',
+    //gplus: 'http://plus.google.com/102860806290800670462',
     //twitter: '@chonso_',
-    www: 'http://chonso.blogspot.mx',
-    github: 'http://github.com/chonso'
+    //www: 'http://chonso.blogspot.mx',
+    //github: 'http://github.com/chonso'
   }
   ]
 };
